@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>논문 목록 (Publications)</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;    /* 딥 네이비 메인 톤 */
+            --accent-color: #3498db;     /* 포인트를 줄 블루 톤 */
+            --text-color: #333333;       /* 가독성 높은 본문 색상 */
+            --light-bg: #f8f9fa;         /* 논문 카드 배경색 */
+            --border-color: #e9ecef;     /* 은은한 경계선색 */
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        header {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            color: var(--primary-color);
+            margin: 0 0 10px 0;
+            font-size: 2.2rem;
+        }
+
+        header p {
+            color: #666;
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        .category-section {
+            margin-bottom: 45px;
+        }
+
+        .category-title {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            border-left: 5px solid var(--accent-color);
+            padding-left: 12px;
+            margin-bottom: 25px;
+            padding-bottom: 2px;
+        }
+
+        .publication-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .publication-item {
+            padding: 20px;
+            margin-bottom: 15px;
+            background-color: var(--light-bg);
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .publication-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .pub-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .pub-authors {
+            font-size: 0.95rem;
+            color: #4a4a4a;
+            margin-bottom: 6px;
+        }
+
+        /* 내 이름 강조 스타일 */
+        .pub-authors .me {
+            font-weight: bold;
+            text-decoration: underline;
+            color: #000;
+        }
+
+        .pub-details {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+        .pub-links {
+            margin-top: 10px;
+        }
+
+        .pub-link {
+            display: inline-block;
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-right: 15px;
+            border: 1px solid var(--accent-color);
+            padding: 2px 8px;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+
+        .pub-link:hover {
+            background-color: var(--accent-color);
+            color: #fff;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: #868e96;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Publications</h1>
+        <p>Research Papers and Conference Proceedings</p>
+    </header>
+
+    <section class="category-section">
+        <h2 class="category-title">Dynamic Substructuring</h2>
+        <ul class="publication-list">
+            <li class="publication-item">
+                <div class="pub-title">[1] Feasibility of hybrid dynamic substructuring for structural modifications in automotive suspension subsystems</div>
+                <div class="pub-authors"><span class="me">M. Cho</span>, J. Boelens, R. Reichart, D. de Klerk, J. Ahn</div>
+                <div class="pub-details">International Styrian NVH Congress, 2026, SAE Paper 2026-01-0697.</div>
+            </li>
+            <li class="publication-item">
+                <div class="pub-title">[2] Prediction of frequency response function changes of an automotive suspension assembly by injection-based dynamic substructuring</div>
+                <div class="pub-authors"><span class="me">M. Cho</span>, J.Y. Oh, D.P. Song, D. de Klerk, Y.J. Kang</div>
+                <div class="pub-details">Mechanical Systems and Signal Processing 228 (2025) 112479.</div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.1016/j.ymssp.2025.112479" class="pub-link" target="_blank">DOI</a>
+                </div>
+            </li>
+            <li class="publication-item">
+                <div class="pub-title">[3] Optimization of suspension bushing stiffness in early development stages using blocked force and energy index</div>
+                <div class="pub-authors">J.Y. Oh, <span class="me">M. Cho</span>, Y.J. Kang</div>
+                <div class="pub-details">Mechanical Systems and Signal Processing 237 (2025) 113157.</div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.1016/j.ymssp.2025.113157" class="pub-link" target="_blank">DOI</a>
+                </div>
+            </li>
+            <li class="publication-item">
+                <div class="pub-title">[4] Source identification of vehicle road noise through blocked forces of rolling tires</div>
+                <div class="pub-authors"><span class="me">M. Cho</span></div>
+                <div class="pub-details">Vides Experience 2025, Munich, Germany, 2025.</div>
+            </li>
+            <li class="publication-item">
+                <div class="pub-title">[5] Bushing stiffness optimization method for NVH improvement using blocked force and energy-based index in suspension system</div>
+                <div class="pub-authors">J.Y. Oh, D. Song, <span class="me">M. Cho</span>, K.-D. Ih, Y.J. Kang</div>
+                <div class="pub-details">International Styrian NVH Congress, 2024, SAE Paper 2024-01-2921.</div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.4271/2024-01-2921" class="pub-link" target="_blank">DOI</a>
+                </div>
+            </li>
+            <li class="publication-item">
+                <div class="pub-title">[6] Index for evaluating the NVH performance of rubber bushings</div>
+                <div class="pub-authors">J.Y. Oh, M.H. Cho, D.P. Song, Y.J. Kang</div>
+                <div class="pub-details">The 29th International Congress on Sound and Vibration, Prague, Czech Republic, 2023.</div>
+            </li>
+            <li class="publication-item">
+                <div class="pub-title">[7] Prediction and optimization of blocked force changes of a suspension system using bush stiffness injection method</div>
+                <div class="pub-authors"><span class="me">M. Cho</span>, D.P. Song, M. Lee, J. Lee, S. Klaassen, R. Reichart, D. de Klerk, E. Kim, Y.J. Kang</div>
+                <div class="pub-details">International Styrian NVH Congress, 2022, SAE Paper 2022-01-0956.</div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.4271/2022-01-0956" class="pub-link" target="_blank">DOI</a>
+                </div>
+            </li>
+            <li class="publication-item">
+                <div class="pub-title">[8] Accuracy improvement method for dynamic substructuring models in vehicle systems</div>
+                <div class="pub-authors">J.G. Kim, H. Park, <span class="me">M. Cho</span>, D.P. Song, Y.J. Kang</div>
+                <div class="pub-details">Journal of Vibration and Control 28 (2022) 786–798.</div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.1177/1077546320983186" class="pub-link" target="_blank">DOI</a>
+                </div>
+            </li>
+            <li class="publication-item">
+                <div class="pub-title">[13] The effects of suspension component stiffness on the road noise: a sensitivity study and optimization</div>
+                <div class="pub-authors">J.-K. Kim, J. Lee, H.-G. Kim, <span class="me">M. Cho</span>, K.-D. Ih, H.-Y. Ko</div>
+                <div class="pub-details">International Styrian NVH Congress, 2018, SAE Paper 2018-01-1510.</div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.4271/2018-01-1510" class="pub-link" target="_blank">DOI</a>
+                </div>
+            </li>
+            <li class="publication-item">
+                <div class="pub-title">[15] Derivation of road noise improvement factor using the FRF-based substructuring method</div>
+                <div class="pub-authors">J.G. Kim, K.-D. Ih, M.H. Cho, D.P. Song, Y.J. Kang</div>
+                <div class="pub-details">The 14th International Conference on Motion and Vibration Control, Daejeon, Korea, 2018.</div>
+            </li>
+            <li class="publication-item">
+                <div class="pub-title">[16] A study on the reduction of road-induced noise level through improving suspension transfer characteristics by using suspension rig</div>
+                <div class="pub-authors">H.-G. Kim, <span class="me">M. Cho</span>, J.-K. Kim, K.-D. Ih</div>
+                <div class="pub-details">Inter-Noise 2017, Hong Kong, China, 2017.</div>
+            </li>
+            <li class="publication-item">
+                <div class="pub-title">[17] Study on multi-body dynamics based suspension-rig simulation for early stage road noise prediction and bushing stiffness optimization</div>
+                <div class="pub-authors">J. Lee, J.-K. Kim, H.-G. Kim, <span class="me">M. Cho</span>, K.-D. Ih, J.-S. Shim, H.-Y. Ko</div>
+                <div class="pub-details">Inter-Noise 2017, Hong Kong, China, 2017.</div>
+            </li>
+            <li class="publication-item">
+                <div class="pub-title">[19] A methodology for evaluating the structure-borne road noise prior to a prototype vehicle using direct force measured on a suspension rig</div>
+                <div class="pub-authors">D.P. Song, D. Min, Y.J. Kang, <span class="me">M. Cho</span>, H.-G. Kim, K.-D. Ih</div>
+                <div class="pub-details">Noise Control Engineering Journal 64 (2016) 295–304.</div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.3397/1/376379" class="pub-link" target="_blank">DOI</a>
+                </div>
+            </li>
+            <li class="publication-item">
+                <div class="pub-title">[25] A methodology for evaluating structure-borne road noise prior to a development mule using direct force measured on a suspension rig</div>
+                <div class="pub-authors">D.P. Song, D. Min, Y.J. Kang, <span class="me">M. Cho</span>, H.-G. Kim, K.-D. Ih</div>
+                <div class="pub-details">Inter-Noise 2015, San Francisco, USA, 2015.</div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="category-section">
+        <h2 class="category-title">Vehicle Aeroacoustics</h2>
+        <ul class="publication-list">
+            <li class="publication-item">
+                <div class="pub-title">[12] Numerical study on the effect of transient wind conditions on the automotive aeroacoustic performance</div>
+                <div class="pub-authors">J. Lee, <span class="me">M. Cho</span>, K.-D. Ih, J.-H. Kim, W.-G. Song</div>
+                <div class="pub-details">Inter-Noise 2019, Madrid, Spain, 2019.</div>
+            </li>
+            <li class="publication-item">
+                <div class="pub-title">[14] Virtual test platform of automotive aeroacoustic performances for earlier development phase</div>
+                <div class="pub-authors"><span class="me">M. Cho</span>, H.-G. Kim, K.-D. Ih</div>
+                <div class="pub-details">Inter-Noise 2018, Chicago, USA, 2018.</div>
+            </li>
+            <li class="publication-item">
+                <div class="pub-title">[18] A digital process for aeroacoustics design of cooling fan modules</div>
+                <div class="pub-authors">A. Mann, M.-S. Kim, F. Pérot, E.-S. Choi, M. Cho, W.-Y. Jung</div>
+                <div class="pub-details">2017 JSAE Annual Congress, Yokohama, Japan, 2017, No. 88-17.</div>
+            </li>
+            <li class="publication-item">
+                <div class="pub-title">[21] Automotive engine cooling fan noise prediction using a lattice Boltzmann based method</div>
+                <div class="pub-authors">M.-S. Kim, F. Pérot, A. Mann, E.-S. Choi, M. Cho, J.-H. Kim</div>
+                <div class="pub-details">FISITA 2016 World Automotive Congress, Busan, Korea, 2016, F2016-NVHG-024.</div>
+            </li>
+            <li class="publication-item">
+                <div class="pub-title">[22] Investigation of aerodynamic noise source generation and transmission of vehicle wind noise recognized by passengers</div>
+                <div class="pub-authors"><span class="me">M. Cho</span></div>
+                <div class="pub-details">The 12th World Congress on Computational Mechanics, Seoul, Korea, 2016, No. 151418.</div>
+            </li>
+            <li class="publication-item">
+                <div class="pub-title">[24] On the ability of numerical solvers to predict interior noise transmission of aerodynamic and aeroacoustic sources in a simplified vehicle model</div>
+                <div class="pub-authors"><span class="me">M. Cho</span>, C.S. Oh, H.-G. Kim, K.-D. Ih</div>
+                <div class="pub-details">Inter-Noise 2015, San Francisco, USA, 2015.</div>
+            </li>
+            <li class="publication-item">
+                <div class="pub-title">[26] Characterization of buffeting noise through a rear window in an automobile using LBM</div>
+                <div class="pub-authors">S. Lee, H. Choi, <span class="me">M. Cho</span>, K.-D. Ih, C. Cheong</div>
+                <div class="pub-details">Transactions of the Korean Society for Noise and Vibration Engineering 25 (2015) 692–699.</div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.5050/KSNVE.2015.25.10.692" class="pub-link" target="_blank">DOI</a>
+                </div>
+            </li>
+            <li class="publication-item">
+                <div class="pub-title">[27] Benchmark study of numerical solvers for the prediction of interior noise transmission excited by an A-pillar vortex</div>
+                <div class="pub-authors"><span class="me">M. Cho</span>, H.-G. Kim, C.S. Oh, K.-D. Ih, A. Khondge, F. Mendonça, J. Lim, E.-S. Choi, B. Ganty, R. Hallez</div>
+                <div class="pub-details">Inter-Noise 2014, Melbourne, Australia, 2014.</div>
+            </li>
+            <li class="publication-item">
+                <div class="pub-title">[28] Benchmark test of CFD software packages for sunroof buffeting in Hyundai simplified model</div>
+                <div class="pub-authors"><span class="me">M. Cho</span>, C.S. Oh, H.-G. Kim, K.-D. Ih</div>
+                <div class="pub-details">Transactions of the Korean Society for Noise and Vibration Engineering 24 (2014) 171–179.</div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.5050/KSNVE.2014.24.3.171" class="pub-link" target="_blank">DOI</a>
+                </div>
+            </li>
+            <li class="publication-item">
+                <div class="pub-title">[29] Benchmark study of commercial CFD solvers for sunroof buffeting in a simplified vehicle model</div>
+                <div class="pub-authors"><span class="me">M. Cho</span>, C.S. Oh, H.-G. Kim, K.-D. Ih, A. Khondge, F. Mendonça, J.L. Kim, D.-G. Lee, Y.N. Kim, D.M. Holman</div>
+                <div class="pub-details">Inter-Noise 2013, Innsbruck, Austria, 2013.</div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="category-section">
+        <h2 class="category-title">Active Sound & Noise Control / Signal Processing</h2>
+        <ul class="publication-list">
+            <li class="publication-item">
+                <div class="pub-title">[9] Coherence-based sensor set expansion for optimal sensor placement in active road noise control</div>
+                <div class="pub-authors">Y.S. Park, Y.J. Kang, M.H. Cho, C.S. Oh</div>
+                <div class="pub-details">Mechanical Systems and Signal Processing 169 (2022) 108788.</div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.1016/j.ymssp.2021.108788" class="pub-link" target="_blank">DOI</a>
+                </div>
+            </li>
+            <li class="publication-item">
+                <div class="pub-title">[10] Reinforcement of low-frequency sound by using a panel speaker attached to the roof panel of a passenger car</div>
+                <div class="pub-authors">K.-H. Lee, <span class="me">M. Cho</span>, J.-G. Ih</div>
+                <div class="pub-details">International Styrian NVH Congress, 2020, SAE Paper 2020-01-1570.</div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.4271/2020-01-1570" class="pub-link" target="_blank">DOI</a>
+                </div>
+            </li>
+            <li class="publication-item">
+                <div class="pub-title">[11] A study on optimal selection of reference accelerometers for active road noise control</div>
+                <div class="pub-authors">T. Kim, E. Chemali, Y.J. Kang, <span class="me">M. Cho</span>, C.S. Oh, J. Kim</div>
+                <div class="pub-details">Inter-Noise 2020, Seoul, Korea, 2020.</div>
+            </li>
+            <li class="publication-item">
+                <div class="pub-title">[20] Development of selective warning system for pedestrian safety around hybrid & electric vehicles</div>
+                <div class="pub-authors"><span class="me">M. Cho</span>, K.-D. Ih, H.S. Kim, J.W. Choi, Y.H. Kim</div>
+                <div class="pub-details">FISITA 2016 World Automotive Congress, Busan, Korea, 2016, F2016-APSD-004.</div>
+            </li>
+            <li class="publication-item">
+                <div class="pub-title">[23] A study on road noise extraction methods for listening</div>
+                <div class="pub-authors">H.-S. Kook, H.-G. Kim, <span class="me">M. Cho</span>, K.-D. Ih</div>
+                <div class="pub-details">Transactions of the Korean Society for Noise and Vibration Engineering 26 (2016) 844–850.</div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.5050/KSNVE.2016.26.7.844" class="pub-link" target="_blank">DOI</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 M. Cho. All Rights Reserved.</p>
+    </footer>
+</div>
+
+</body>
+</html>
